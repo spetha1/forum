@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Harbour Seals (Phoca Vitulina) with Wikipedia</title>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+	<style>
+  @import url("https://use.typekit.net/hcs5bcr.css");
+</style>
+	<style>
+    @font-face {
+        font-family: Georgia;
+        src: url("Fonts/Georgia.ttf");
+	} @font-face {
+		font-family: Orpheus-Pro;
+		src: url("Fonts/Orpheus-Pro.otf");
+	} body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        height: auto;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+		margin: 25px auto;
+    } #banner {
+        width: 1024px;
+		margin-bottom: 0px;
+    } h1 {
+        font: 48pt/1.0em "Orpheus Pro";
+        text-align: center;
+        margin: 24px 0 24px 0;
+    	color: black;
+   		text-shadow: 2px 3px 6px teal;
+	 } header p {
+        font: 14pt/1.4em Georgia, serif;
+        width: 65ch;
+        margin: 24px auto;
+	} p {
+		display: block;
+		font: 14pt / 1.4em Georgia;
+    	width: 768px;
+    	margin: 0px auto;
+	} p2 {
+		display: block;
+		font: 2pt / 1.4em Georgia;
+    	width: 768px;
+    	margin: 12px auto;
+    } main {
+        width: 768px;
+    	height: 768px;
+    	margin: 36px auto;
+    	display: grid;
+    	grid-gap: 1px;
+    	grid-template: repeat(3, 256px) / repeat(2, 384px);
+    } li {
+        font: 16pt/2.0em Georgia;
+        list-style: none;
+        width: 20%;
+		height: auto;
+		border-radius: 6px;
+		margin: 0 auto;
+        text-align: center;
+		background: rgba(194,227,242,100);
+    } a li {
+        color: black;
+	} a {
+        text-decoration: none;
+    } a li:hover {
+        background: lightgray;
+    } li:last-child {
+        border-left: 1px solid white;
+    } ul li ul li {
+        visibility: hidden;
+        width: 100%;
+        float: none;
+     } form {
+        width: 600px;
+		height: 840px;
+        margin: 0 0 0 60px;
+        border-radius: 12px;
+        background: rgba(125,147,151,0.50);
+        padding: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font: 14pt/1.4em Georgia;
+    } #personal input {
+        width: 100%;
+        height: 35px;
+    } #personal textarea {
+        width: 100%;
+    } label {
+        margin-top: 15px;
+		margin-bottom: 15px;
+    } select, input[type="submit"] {
+        font: 14pt/1.4em Georgia;
+    } input[type="submit"] {
+        width: 200px;
+        height: 40px;
+        margin: 24px auto;
+        background: rgba(140,189,255,1.00);
+        border-radius: 6px;
+    } input[type="submit"]:hover {
+        opacity: 0.75;
+    } fieldset {
+        margin: 8px 0 8px 0;
+        padding: 12px;
+	} img {
+        margin: 0px 24px 24px 0;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px darkgray;
+		overflow-clip-margin: content-box;
+    	overflow: clip;
+		float: left;
+    } footer {
+        width: 80%;
+        height: auto;
+        min-height: 100px;
+        margin: 0 auto 48px auto;
+        // border: 1px dashed dimgray;
+    } footer p {
+        font: 14pt/1.4em Georgia, serif;
+    } footer h2 {
+        font: bold 14pt/1.4em Georgia, serif;
+        text-align: center;
+</style>
+</head>
+<body>
+<div id="page">
+ 	<img id="banner" src="HomePage_Links/anna-storsul-unsplash.jpg" alt="seal-banner">
+	<ul id="menu">
+		<p2>&nbsp;</p2>
+		<a href="anaspeth_spring2026_homepage.html">
+			<li>Home</li>
+		</a>
+    </ul>
+	<h1>Contact Forum</h1>
+	<main>
+		<form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+		<input type="hidden" name="access_key" value="6ea120b7-cd45-45b2-9d04-d25d239c2088">
+		<div id="personal">        
+            <label>Name</label>
+            <input type="text" name="name" required="">
+            <label>Email</label>
+            <input type="email" name="email" required="">
+            <label>Subject</label>
+            <input type="text" name="title" required="">
+            <label>Message</label>
+            <textarea name="message" rows="6" cols="72" required=""></textarea>
+        </div>        
+        <fieldset>
+            <label>Reason for contacting (check only one):</label>
+            <br>
+            <input type="radio" id="design" name="reason" value="Design">
+            <label for="html">Seal Photo Contribution</label>
+            <br>
+            <input type="radio" id="consulting" name="reason" value="Consulting">
+            <label for="css">Harbor Seal Information Request&nbsp;</label>
+            <br>
+            <input type="radio" id="interface" name="reason" value="UXD">
+            <label for="interface">Volunteer Request</label>
+            <br>
+            <input type="radio" id="other" name="reason" value="Other">
+            <label for="other">Other</label>
+        </fieldset>
+        <fieldset>
+            <label>What sort of seals do you enjoy?</label>
+            <br>
+            <input type="checkbox" id="system" name="system" value="Mac" onclick="toggle(this)">
+       	  <label for="system1"> Eastern Pacific (P. v. richardii)</label><br>
+            <input type="checkbox" id="system1" name="system" value="Mac">
+       	  <label for="system1"> Western Pacific (P. v. stejnegeri)</label><br>
+            <input type="checkbox" id="system2" name="system" value="Windows">
+       	  <label for="system2"> Eastern Atlantic (P. v. vitulina)</label><br>
+            <input type="checkbox" id="system3" name="system" value="UNIX">
+       	  <label for="system3"> Western Atlantic (P. v. concolor)</label>
+        </fieldset>
+        <fieldset>
+            <label for="time">What is your timeframe?</label>
+            <select id="time" name="time">
+            <option value="asap">ASAP</option>
+            <option value="week">this week</option>
+            <option value="month">this month</option>
+            <option value="quarter">this quarter</option>
+            </select>
+        </fieldset>           
+    	<input type="submit" value="Send">
+		</form>
+	</main>
+	<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+	<footer>
+		<h2>Contacting Us</h2>
+		  <p>Would you like to contribute to the Harbor Seal Website? Let us know by sending in a form request! We accept new seal photos, coding volunteers, and requests for new information!</p>
+    </footer>
+</div>
+</body>
+</html>
